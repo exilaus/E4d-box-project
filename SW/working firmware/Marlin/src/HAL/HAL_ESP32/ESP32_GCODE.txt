@@ -1,0 +1,37 @@
+M585: Configure / Display host name
+
+M586: Configure network protocols
+Parameters:
+
+Pnn Protocol: 0 = HTTP or HTTPS, 1 = WSocket, 2 = Telnet
+Snn 0 = disable this protocol, 1 = enable this protocol
+Rnn TCP port number to use for the specified protocol. Ignored unless S = 1. If this parameter is not provided then the default port for that protocol and TLS setting is used.
+
+Known issue : stopping http server generate issue https://github.com/me-no-dev/ESPAsyncWebServer/issues/265 
+PR will be done soon
+
+M587: Set client WiFi host network parameters, or display client network parameters
+Parameters:
+
+S"ccc" Network SSID
+P"ccc" Network password
+Inn.nn.nn.nn (optional) IP address to use when connected to this network. If empty or not specified then an IP address will be acquired via DHCP.
+Jnn.nn.nn.nn (optional) Gateway IP address to use when connected to this network.
+Knn.nn.nn.nn (optional) Netmask to use when connected to this network
+
+M587 with no paramet neers displaytwork parameters, but not the remembered password.
+
+M588: Set / Display WiFi mode
+Parameters: S0: Wifi Off, S1: STA mode, S2: AP mode , P0 or empty: save only,  P1: apply immediatly
+No parameters: Display current and saved wifi mode
+
+M589: Configure access point parameters
+Parameters:
+
+S"ccc" The SSID that the WiFi interface should use when it is commanded to run as an access point
+P"ccc" The WiFi password
+Inn.nn.nn.nn The IP address to use
+Cnn The WiFi channel to use (optional)
+Note: WPA2 security will be used by default.
+
+M590: List all available Access points

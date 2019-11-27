@@ -19,7 +19,7 @@
 
 //Preferences entries
 #define NAMESPACE "MARLIN"
-#define HOSTNAME_ENTRY "ESP_HOSTNAME"
+#define HOSTNAME_ENTRY "E4d@box"
 #define STA_SSID_ENTRY "STA_SSID"
 #define STA_PWD_ENTRY "STA_PWD"
 #define STA_IP_ENTRY "STA_IP"
@@ -41,7 +41,7 @@
 #define ESP_WIFI_STA 1
 #define ESP_WIFI_AP  2
 
-#define DHCP_MODE   0
+#define DHCP_MODE   1
 #define STATIC_MODE   0
 
 //Switch 
@@ -49,16 +49,16 @@
 #define ESP_APPLY_NOW 1
 
 //defaults values
-#define DEFAULT_HOSTNAME "MARLIN_ESP"
-#define DEFAULT_STA_SSID "MARLIN_ESP"
+#define DEFAULT_HOSTNAME "E4d@box"
+#define DEFAULT_STA_SSID "E4d@box"
 #define DEFAULT_STA_PWD "12345678"
 #define DEFAULT_STA_IP "0.0.0.0"
 #define DEFAULT_STA_GW "0.0.0.0"
 #define DEFAULT_STA_MK "0.0.0.0"
-#define DEFAULT_WIFI_MODE 0
-#define DEFAULT_AP_SSID "MARLIN_ESP"
+#define DEFAULT_WIFI_MODE 2
+#define DEFAULT_AP_SSID "E4d@box"
 #define DEFAULT_AP_PWD "12345678"
-#define DEFAULT_AP_IP "192.168.0.1"
+#define DEFAULT_AP_IP "10.10.10.1"
 #define DEFAULT_AP_MK "255.255.255.0"
 #define DEFAULT_AP_CHANNEL 1
 #define DEFAULT_WEBSERVER_PORT 80
